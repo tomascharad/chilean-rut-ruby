@@ -11,12 +11,12 @@ To install
 To use
 ```
   require 'chilean_rut'
+
+
+  ChileanRut::validate('')
+  ChileanRut::format('')
+  ChileanRut::unformat('')
+  ChileanRut::validValidatorDigit('')
+  ChileanRut::correctValidatorDigit('')
+  ChileanRut::getValidatorDigit('')
 ```
-
-
-ChileanRut::validate('')
-ChileanRut::format('')
-ChileanRut::unformat('')
-ChileanRut::validValidatorDigit('')
-ChileanRut::correctValidatorDigit('')
-ChileanRut::getValidatorDigit('')

@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name  =   'chilean-rut'
-  s.version = '0.0.2'
+  s.version = '0.0.3'
   s.date  = '2016-02-08'
   s.summary = 'Validates, formats and deformats chilean rut (chilean tax Number)'
   s.authors = ["Tomás Charad"]
