@@ -57,8 +57,10 @@ module RUT
   ##
   #Strips a R.U.T. format (points & hyphens)
   def quitarFormato(rut)
-    rut=rut.delete "."
-    rut=rut.delete "-"
+    if (rut)
+      rut=rut.delete "."
+      rut=rut.delete "-"
+    end
   end
 
   ##
