@@ -1,43 +1,22 @@
-rut-chileno
+ChileanRut
 ===========
 
-ruby gem to validate and format chilean R.U.T.
+Validates, formats and unformats chilean rut (chilean tax Number)
 
-install as ruby gem
+To install
 ```
-	$ gem install rut_chileno
-```
-or add to Gemfile in Ruby on Rails
-```ruby
-	gem 'rut_chileno'
-```
-then
-```
-	$ bundle install
+	$ gem install chilean_rut
 ```
 
-One example use could be in a validator class
-```ruby
-class RUTValidator < ActiveModel::Validator
-  require 'rut_chileno'
-  def validate(record)
-    unless RUT::validar(record.rut)
-      record.errors[:rut] << I18n.t(:invalid_rut)
-    end
-  end
-end
+To use
 ```
-which is then referenced from a model
-```ruby
-class Person < ActiveRecord::Base
-  validates_with RUTValidator
-end
+  require 'chilean_rut'
 ```
-but let your imagation fly
 
 
-----------------------------------------
-
-based on jQuery library by Joaquin Nuñez
-
-http://joaquinnunez.cl/jQueryRutPlugin/
+ChileanRut::validate('')
+ChileanRut::format('')
+ChileanRut::unformat('')
+ChileanRut::validValidatorDigit('')
+ChileanRut::correctValidatorDigit('')
+ChileanRut::getValidatorDigit('')
