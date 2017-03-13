@@ -55,10 +55,13 @@ class ChileanRut
 
   ##
   #Strips a R.U.T. format (points & hyphens)
-  def self.unformat(rut)
+  def self.unformat(rut, force_uppercase=false)
     if (rut)
       rut=rut.delete "."
       rut=rut.delete "-"
+      if force_uppercase
+        rut = rut.upcase
+      end
     end
   end
 
